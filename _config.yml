@@ -1,1 +1,36 @@
-theme: jekyll-theme-midnight
+baseurl: ""
+url: "http://www.cody402.com/"
+twitter_username: cody402
+
+
+# Build settings
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+  - jekyll-assets
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+collections:
+  work:
+    output: true
+    permalink: /work/:path/
+  personalprojects:
+    output: true
+    permalink: /work/:path/
+
+assets:
+  sources:
+    - _assets/img
+    - _assets/css
+    - _assets/js
+  compress:
+    css:  sass
+    js:   uglifier
+
+exclude:
+  - node_modules
+
+environment: production

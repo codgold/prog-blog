@@ -1,0 +1,20 @@
+---
+layout: defaultindex
+comments: true
+---
+{% include nav.html %}
+
+<div class="container-inner-post">
+  <img class="blog-head-image" src="{{page.image}}" />
+  <h1>{{page.title}}</h1>
+  <p>{{ page.date | date_to_string }} | Cody Anderson</p>
+  <hr>
+  <div class="post-inner">
+    <div class="text-left">
+      <p>{{page.content}}</p>
+    </div>
+    {% include socialshare.html %}
+    <a href="/blog.html"><div class="button light-link">More Posts</div></a>
+    {% include disqus.html %}
+  </div>
+</div>
